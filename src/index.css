@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&family=IBM+Plex+Sans+Thai:wght@100;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+}
+
+
+h2 {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  font-size: 2.15em;
+}
+
+h2:not(.product__overview h2) {
+  padding-left: 20px;
+}
+
+/* ------------------------------------------------------ */
+/* -- NAVIGATION -- */
+
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+  align-items: center;
+  margin: 20px auto ;
+
+  
+}
+
+.nav-img img{
+  width: 50px;
+  margin-right: 5px;
+}
+
+.title {
+  background: url(https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 900px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  
+}
+
+.title-text {
+  
+  background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+  color: #fff;
+  font-weight: bold;
+  border: 3px solid #5F8D4E;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  
+  
+}
+
+.title-text h1 {
+    font-family: 'IBM Plex Sans Thai', sans-serif;  
+    font-size: 4rem;  
+    line-height: 1.5;  
+    font-weight: 900;
+
+}
+
+.title-img img {
+  width: 100%;
+}
+
+.nav__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rem;
+}
+
+
+
+.nav__brand img {
+  max-width: 125px;
+  height: auto;
+}
+
+.nav__brand h1 {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  /* font-family: 'Charmonman'; */
+  font-size: 2.5em;
+  color: #285430;
+}
+
+hr{
+  border: 1px solid #285430;
+}
+.nav__links {
+  background-color: #5F8D4E;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  
+}
+
+.nav__links li {
+  margin: 0 50px;
+}
+
+.nav__links li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+  font-family: 'IBM Plex Sans Thai', sans-serif; 
+  
+}
+
+.nav__links li a:hover {
+  color: #fcec0c;
+}
+
+.nav__connect {
+  width: 150px;
+  height: 40px;
+  margin: 0 5rem;
+
+  background-color: #056632;
+  color:#fff;
+
+  border: none;
+  border-radius: 4px;
+
+  font-family: "Lalezar";
+  font-size: 1.25em;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.nav__connect:hover {
+  background-color: #285430;
+}
+
+/* ------------------------------------------------------ */
+/* -- CARDS -- */
+
+.cards__section {
+  max-width: 75%;
+  margin: 0 auto 0;
+  padding: 0 20px;
+  text-align: center;
+  
+}
+
+.cards__section h3 {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-size: 1.75em;
+  padding: 100px 0 0;
+  
+}
+
+.cards {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  margin-top: 20px;
+  
+  
+}
+
+.card {
+  width: 310px;
+  height: 400px;
+  background-color: #A4BE7B;
+  margin: 10px auto;
+  border-radius: 5px;
+
+  cursor: pointer;
+  position: relative;
+
+  transition: all 250ms ease;
+}
+
+.card:hover {
+  box-shadow: #000;
+}
+
+.card__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: -1;
+}
+
+.card__image img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.card__info {
+  width: 100%;
+  background-color: #5F8D4E;
+  color: #fff;
+  padding: 5px 10px;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card__info h4 {
+  font-family: "Open Sans";
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.card__info .rating {
+  color: yellow;
+  margin: 5px 0;
+}
+
+.card__info p {
+  font-family: "Open Sans";
+  font-size: 0.95em;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* ------------------------------------------------------ */
+/* -- PRODUCT -- */
+
+.product {
+  width: 60vw;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+ border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  align-items: center;
+
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  background: var(--clr-white);
+}
+
+.product__image {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.product__image img {
+  max-width: 100%;
+}
+
+.product__close {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 30px;
+  height: 30px;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.product__close img {
+  width: 25px;
+  height: 25px;
+}
+
+.product__overview {
+  height: 90%;
+  padding: 20px 40px 20px 20px;
+}
+
+.product__overview h2,
+.product__overview hr,
+.product__overview .rating {
+  margin: 10px auto;
+}
+
+.product__overview ul {
+  margin-left: 40px;
+}
+
+.product__order {
+  max-width: 300px;
+  height: 90%;
+
+  border: 1px solid #A4BE7B;
+  padding: 20px;
+}
+
+.product__order h1,
+.product__order p {
+  margin-bottom: 10px;
+}
+
+.product__buy {
+  width: 225px;
+  height: 40px;
+  margin: 20px 0;
+
+  background-color: #5F8D4E;
+  color: #fff;
+
+
+  border: none;
+  border-radius: 24px;
+
+  font-family: "Open Sans";
+  font-size: 0.95em;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.product__buy:hover {
+  background-color: #285430;
+}
+
+.product__bought {
+  padding: 5px;
+  border: 1px solid #5F8D4E;
+}
+
+@media screen and (max-width: 992px) {
+  .product__details {
+    height: 95%;
+    width: 90%;
+  }
+
+  .product__order {
+    max-width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    grid-column: span 2;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product__details {
+    height: 95%;
+    overflow-y: scroll;
+  }
+
+  .product__image {
+    grid-column: span 2;
+  }
+}
